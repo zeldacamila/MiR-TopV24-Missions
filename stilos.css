@@ -1,0 +1,117 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.main-section {
+  width: 100%;
+}
+.main-section .title {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  padding: 10px;
+  color: white;
+  background-color: #2ECC71;
+}
+.main-section .title h2 {
+  text-align: center;
+}
+
+.section-items {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.section-items .main-restaurants {
+  border-bottom: 1px solid #797D7F;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  padding: 10px 0;
+}
+.section-items .main-restaurants .restaurants-img {
+  width: 30%;
+  margin: 10px;
+  display: flex;
+}
+.section-items .main-restaurants .restaurants-img img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+}
+.section-items .main-restaurants .info-item {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.section-items .main-restaurants .info-item h2 {
+  font-size: 20px;
+  color: #626567;
+  margin-bottom: 5px;
+}
+.section-items .main-restaurants .info-item .rank {
+  color: #626567;
+  display: flex;
+  flex-direction: row;
+}
+.section-items .main-restaurants .info-item .rank i {
+  color: #2ECC71;
+}
+.section-items .main-restaurants .info-item .rank p {
+  margin-left: 5px;
+}
+.section-items .main-restaurants .info-item .location {
+  margin-top: 5px;
+  display: flex;
+  flex-direction: row;
+  color: #626567;
+  gap: 5px;
+}
+
+.menu {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+  padding: 10px;
+  border: 1px solid #797D7F;
+  position: -webkit-sticky;
+  position: sticky;
+  bottom: 0;
+  background-color: #D7DBDD;
+}
+.menu div {
+  width: 33%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.menu i {
+  color: #626567;
+  font-size: 28px;
+}
+.menu .fa-circle-plus {
+  position: absolute;
+  color: #2ECC71;
+  background-color: white;
+  font-size: 54px;
+  padding: 10px;
+  border: 1px solid #797D7F;
+  border-radius: 50%;
+  bottom: 10px;
+  left: calc(50% - 35px);
+}
